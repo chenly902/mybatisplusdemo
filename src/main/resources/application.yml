@@ -1,0 +1,17 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://8.131.98.109:10002/easybii_prod?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false
+    username: edev
+    password: weB@#1024
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml  # 读取映射文件
+  type-aliases-package: com.example.demo.entity
+  global-config:
+    db-config:
+      id-type: auto  # 默认使用数据库自增
+
