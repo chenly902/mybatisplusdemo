@@ -21,7 +21,7 @@ import java.util.Scanner;
  * @Author: czs
  * @Date: 2021-03-04 11:33
  * @ClassName: com.easybiidemo.mybatisplusdemo.MySQLCodeGenerator
- * @Description:
+ * @Description: 代码生成器
  */
 public class MySQLCodeGenerator {
 
@@ -87,7 +87,7 @@ public class MySQLCodeGenerator {
 //        strategy.setTablePrefix(pc.getModuleName() + "_");//设置表前缀不生成
 
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);//数据库表字段映射到实体的命名策略
-        strategy.setEntityLombokModel(true); // lombok 模型 @Accessors(chain = true) setter链式操作
+//        strategy.setEntityLombokModel(true); // lombok 模型 @Accessors(chain = true) setter链式操作
 
         strategy.setLogicDeleteFieldName("is_delete");//逻辑删除字段名
         strategy.setEntityBooleanColumnRemoveIsPrefix(false);//去掉布尔值的is_前缀
